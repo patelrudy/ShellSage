@@ -62,6 +62,15 @@ class TaskManager:
         except sqlite3.Error as e:
             return f'Error: Could not complete task. {e}'
 
-    def get_tasks(self):
-        self.cursor.execute('SELECT * FROM tasks')
+    def get_tasks(self, completed=None, priority_order=False):
+        if completed is not None:
+            self.cursor.execute('SELECT * FROM tasks WHERE completed = ? ORDER BY priority ASC', (completed,))
+        elif priority_order:
+            self.cursor.execute('SELECT * FROM tasks ORDER BY priority ASC')
+        else:
+            self.cursor.execute('SELECT * FROM tasks')
+        
         return [Task(*row) for row in self.cursor.fetchall()]
+
+    def close(self):
+        self.conn.close()
