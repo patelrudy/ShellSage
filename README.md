@@ -6,7 +6,7 @@ ShellSage is a command-line interface (CLI) productivity app designed to help yo
 
 To use ShellSage, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/shellsage.git`
+1. Clone the repository: `git clone https://github.com/patelrudy/ShellSage.git`
 2. Navigate to the project directory: `cd shellsage`
 3. Install the required dependencies: `pip install -r requirements.txt`
 
