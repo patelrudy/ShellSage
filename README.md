@@ -27,19 +27,19 @@ ShellSage provides several command-line options to perform different tasks. Here
 
 ### Examples
 1.  Add a task:
-        python shellsage.py --add "Finish project" --due_date "2023-07-15" --priority 3 --category "Work"
+        - python shellsage.py --add "Finish project" --due_date "2023-07-15" --priority 3 --category "Work"
 2.  Mark a task as complete:
-        python shellsage.py --complete "Finish project"
+        - python shellsage.py --complete "Finish project"
 3.  Show all tasks:
-        python shellsage.py --show
+        - python shellsage.py --show
 4.  Show tasks in detail
-        python shellsage.py --show --detail
+        - python shellsage.py --show --detail
 5.  Show only completed tasks
-        python shellsage.py --show --completed
+        - python shellsage.py --show --completed
 6.  Show only uncompleted tasks
-        python shellsage.py --show --uncompleted
+        - python shellsage.py --show --uncompleted
 7.  Show task order by priority
-        python shellsage.py --show --priority_order
+        - python shellsage.py --show --priority_order
 
 ## Database
 
