@@ -14,7 +14,6 @@ To use ShellSage, follow these steps:
 
 ShellSage provides several command-line options to perform different tasks. Here are the available options:
 
-```plaintext
 --add              Add a task
 --due_date         Due date for the task being added
 --priority         Priority for the task being added (1-5)
